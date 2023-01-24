@@ -1,0 +1,30 @@
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	   
+	    String a="binary";
+	    String b="brakvny";
+	    String str1=a.toLowerCase();
+	    String str2=b.toLowerCase();
+	    if(str1.length()==str2.length()){
+	        char[] char1=str1.toCharArray();
+	        char[] char2=str2.toCharArray();
+	        Arrays.sort(char1);
+	        Arrays.sort(char2);
+	        Boolean word=Arrays.equals(char1,char2);
+	        if(word){
+	            System.out.println("its is Anagram");
+	        }
+	        else{
+	            System.out.println("its is not anagram");
+	        }
+	        
+	        
+	    }
+	    else{
+	        System.out.println("Its is not Anagram");
+	    }
+	    
+	}
+}
